@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations with Html and Css</title>
+    <style>
+        /* transtion */
+        .gola{
+            border: 10px solid rgb(65, 6, 6);
+            background-color: rgb(144, 119, 102);
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            transition: width 5s,height 5s,border-radius 5s, background 5s;
+        }
+        .gola:hover{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: rgb(61, 94, 128);
+        }
+        /* animation */
+        a{
+            animation: bouncing 0.8s ease 0s infinite alternate both;
+            background-color: rgb(51, 27, 84);
+            border: 10px solid rgb(138, 58, 71);
+            border-radius: 100px;
+            margin: 500px;
+            padding: 60px;
+            display: inline-block;
+            position: relative;
+            font-family: cursive;
+            font-style: italic;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        @keyframes bouncing {
+            0%{
+                bottom: 0;
+                box-shadow: 0 0 5px black
+            }
+            100%
+            {
+                bottom: 500px;
+                box-shadow: 0 50px 50px rgb(90, 75, 75)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div >
+        	<h1 class="gola">&#128515;</h1>
+    </div>
+   <a style="color: aquamarine;"> loading </a>
+</body>
+</html>
